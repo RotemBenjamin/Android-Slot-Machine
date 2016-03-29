@@ -1,6 +1,7 @@
 package com.example.rotem.flaminghotgame;
 
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
 
 /**
  * Created by Rotem on 23/03/2016.
@@ -22,6 +23,16 @@ public class Sprite
         this.width = width;
         this.height = height;
         this.bitmap = bitmap;
+    }
+
+    public void update()
+    {
+        // TO IMPLEMENT
+    }
+
+    public void onDraw(Canvas canvas)
+    {
+        // TO IMPLEMENT
     }
 
     public int getX() {
