@@ -17,4 +17,8 @@
     <color name="Center_Color">#999999</color>
     <color name="End_Color">#777777</color>
 
+    <color name="Grad_Start_Color">#777777</color>
+    <color name="Grad_Center_Color">#A5F394</color>
+    <color name="Grad_End_Color">#777777</color>
+
 </resources>
