@@ -13,4 +13,8 @@
 
     <color name="spin_button_text_color">#aabbcc</color>
 
+    <color name="Start_Color">#777777</color>
+    <color name="Center_Color">#999999</color>
+    <color name="End_Color">#777777</color>
+
 </resources>
