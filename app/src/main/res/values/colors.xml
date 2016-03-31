@@ -7,4 +7,10 @@
     <color name="main_menu_color">#111112</color>
     <color name="main_color_canvas">#111100</color>
 
+    <color name="Spin_Button_Start_Color">#555555</color>
+    <color name="Spin_Button_Center_Color">#666666</color>
+    <color name="Spin_Button_End_Color">#777777</color>
+
+    <color name="spin_button_text_color">#aabbcc</color>
+
 </resources>
