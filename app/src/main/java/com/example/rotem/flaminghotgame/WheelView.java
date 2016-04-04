@@ -1,7 +1,10 @@
 package com.example.rotem.flaminghotgame;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -11,6 +14,15 @@ import android.view.View;
 public class WheelView extends View
 {
     private int right = 0, top = 0, width = 0, height = 0;
+    private Paint paint;
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    private Bitmap[] bitmap, resizedBitmap;
+    private BitmapFactory.Options options;
+    private Sprite[] sprite;
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
 
     public WheelView(Context context) {
         super(context);
