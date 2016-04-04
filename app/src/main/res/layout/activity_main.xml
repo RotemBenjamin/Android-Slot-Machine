@@ -22,6 +22,25 @@
             android:background="@color/main_color_canvas"
             android:layout_weight="0.20"
             android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="fill_parent"
+                android:weightSum="1">
+
+                <com.example.rotem.flaminghotgame.WheelView
+                    android:layout_weight="0.20"
+                    android:id="@+id/first_wheel"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#330000"
+                    android:layout_marginRight="2dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+
         </RelativeLayout>
 
 
