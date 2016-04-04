@@ -38,6 +38,50 @@
                     android:layout_gravity="center_horizontal"
                     />
 
+                <com.example.rotem.flaminghotgame.WheelView
+                    android:layout_weight="0.20"
+                    android:id="@+id/second_wheel"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#550000"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <com.example.rotem.flaminghotgame.WheelView
+                    android:layout_weight="0.20"
+                    android:id="@+id/third_wheel"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#770000"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <com.example.rotem.flaminghotgame.WheelView
+                    android:layout_weight="0.20"
+                    android:id="@+id/fourth_wheel"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#990000"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <com.example.rotem.flaminghotgame.WheelView
+                    android:layout_weight="0.20"
+                    android:id="@+id/fifth_wheel"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#aa0000"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
             </LinearLayout>
 
 
