@@ -10,4 +10,16 @@ public class MyStatic
 
     public static final int BOARD_ROWS = 4, BOARD_COLS = 5;
     public static int[][] THE_MAIN_BOARD = { {0,0,0,0,0} , {0,0,0,0,0} , {0,0,0,0,0} , {0,0,0,0,0} };
+
+    public static final int BANANA = 0;
+    public static final int BAR = 1;
+    public static final int CHERRY = 2;
+    public static final int DOLLAR = 3;
+    public static final int GRAPES = 4;
+    public static final int ORANGE = 5;
+    public static final int SEVEN = 6;
+    public static final int WILD = 7;
+    public static final int WATERMELON = 8;
+
+
 }
