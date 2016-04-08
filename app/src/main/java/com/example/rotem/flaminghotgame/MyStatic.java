@@ -21,5 +21,22 @@ public class MyStatic
     public static final int WILD = 7;
     public static final int WATERMELON = 8;
 
+    public static final int BANANA_WIN = 50;
+    public static final int BAR_WIN = 200;
+    public static final int CHERRY_WIN = 50;
+    public static final int DOLLAR_WIN = 150;
+    public static final int GRAPES_WIN = 50;
+    public static final int ORANGE_WIN = 50;
+    public static final int SEVEN_WIN = 150;
+    public static final int WILD_WIN = 0;
+    public static final int WATERMELON_WIN = 50;
 
+    public static final int THREE_IN_ROW = 0;
+    public static final int FOUR_IN_ROW = 1;
+    public static final int FIVE_IN_ROW = 2;
+
+    public static final int FIRST_ROW = 0;
+    public static final int SECOND_ROW  = 1;
+    public static final int THIRD_ROW  = 2;
+    public static final int FOURTH_ROW   = 3;
 }
