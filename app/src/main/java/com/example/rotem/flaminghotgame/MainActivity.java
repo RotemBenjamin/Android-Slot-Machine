@@ -5,6 +5,10 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    private boolean winFiveInARow[] = getResetWinningsArray();
+    private boolean winFourInARow[] = getResetWinningsArray();
+    private boolean winThreeInARow[]= getResetWinningsArray();
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -18,6 +22,20 @@ public class MainActivity extends AppCompatActivity {
     private void resetThings()
     {
 
+    }
+
+    /**
+     * returns empty boolean array in size MyStatic.BOARD_ROWS
+     * @return
+     */
+    private boolean[] getResetWinningsArray()
+    {
+        boolean[] arr = new boolean[MyStatic.BOARD_ROWS];
+
+        for (int i = 0; i < MyStatic.BOARD_ROWS; i++)
+            arr[i] = false;
+
+        return arr;
     }
 
     @Override
