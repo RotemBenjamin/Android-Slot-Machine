@@ -1,5 +1,6 @@
 package com.example.rotem.flaminghotgame;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -8,6 +9,14 @@ public class MainActivity extends AppCompatActivity {
     private boolean winFiveInARow[] = getResetWinningsArray();
     private boolean winFourInARow[] = getResetWinningsArray();
     private boolean winThreeInARow[]= getResetWinningsArray();
+
+    private Long startTime = Long.valueOf(0) , endTime = Long.valueOf(0) , DELAY = Long.valueOf(350);
+    private int userWinPoints = 0 , winPoints = 0;
+    private int spinThreadSleepTime = 7 , winTheardSleepTime = 10;
+    private final int USER_PAY_FOR_SPIN = 100 , COLOR_FOR_MINUS = Color.RED , COLOR_FOR_PLUS = Color.GREEN;
+
+    public static boolean running = false , isWinningRunning = false;
+    public static boolean isWinning = false , isAutomaticGame = false , isWinView = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
