@@ -27,12 +27,20 @@ public class Sprite
 
     public void update()
     {
-        // TO IMPLEMENT
+        y += height;
+
+        if(y > height * MyStatic.WHEEL_VALUES_ARRAY[(MyStatic.NUMBER_OF_FRUITS_IN_ONE_WHEEL-1)]){
+            y = height * MyStatic.WHEEL_VALUES_ARRAY[0] ;
+        }
     }
 
     public void onDraw(Canvas canvas)
     {
-        // TO IMPLEMENT
+        if(MainActivity.running)
+            update();
+
+        if(bitmap != null)
+            canvas.drawBitmap(bitmap, x, y, null);
     }
 
     public int getX() {
