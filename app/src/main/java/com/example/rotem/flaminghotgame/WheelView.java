@@ -14,14 +14,12 @@ import android.view.View;
 public class WheelView extends View
 {
     private int right = 0, top = 0, width = 0, height = 0;
-    private Paint paint;
+    private int imageWidth = 10, imageHeight = 20;
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     private Bitmap[] bitmap, resizedBitmap;
     private BitmapFactory.Options options;
     private Sprite[] sprite;
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 
 
     public WheelView(Context context) {
@@ -51,6 +49,12 @@ public class WheelView extends View
     protected void onDraw(Canvas canvas)
     {
         super.onDraw(canvas);
+
+        for(int i=0; i< MyStatic.NUMBER_OF_FRUITS_IN_ONE_WHEEL; i++){
+            if(sprite != null) {
+                sprite[i].onDraw(canvas);
+            }
+        }
     }
 
 
@@ -61,5 +65,8 @@ public class WheelView extends View
         top = getPaddingTop();
         width = w - (getPaddingLeft() + getPaddingRight());
         height = h - (getPaddingTop() + getPaddingBottom());
+
+        imageWidth = width;
+        imageHeight = height/4;
     }
 }
