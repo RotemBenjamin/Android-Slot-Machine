@@ -1,5 +1,6 @@
 package com.example.rotem.flaminghotgame;
 
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
     public static boolean isWinning = false , isAutomaticGame = false , isWinView = false;
 
     private TextView spinButton, winTextView, creditTextView, automaticButton, settingsTextView, collectButton;
+
+    private int userCredits = 2000 , SP_DEFAULT_USER_SCORE = 0;
+
+    private final String SP_USER_SCORE = "LevelPref", SP_INITIALIZED = "InitializeSharedPref", SHARED_PREF_IS_START = "IsStartPref",SHARED_PREF_NAME = "SharedPrefName";
+    private SharedPreferences sharedPref;
+    private SharedPreferences.Editor sharedPrefEditor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
