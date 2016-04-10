@@ -3,6 +3,7 @@ package com.example.rotem.flaminghotgame;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,11 +19,20 @@ public class MainActivity extends AppCompatActivity {
     public static boolean running = false , isWinningRunning = false;
     public static boolean isWinning = false , isAutomaticGame = false , isWinView = false;
 
+    private TextView spinButton, winTextView, creditTextView, automaticButton, settingsTextView, collectButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        spinButton = (TextView) findViewById(R.id.spinTextView);
+        winTextView = (TextView) findViewById(R.id.winTextView);
+        creditTextView = (TextView) findViewById(R.id.creditsSumTextView);
+        settingsTextView = (TextView) findViewById(R.id.gameSettingsTextView);
+        automaticButton = (TextView) findViewById(R.id.automaticGameTextView);
+        collectButton = (TextView) findViewById(R.id.collectTextView);
     }
 
     /**
