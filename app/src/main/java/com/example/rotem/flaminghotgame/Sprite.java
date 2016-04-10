@@ -25,6 +25,10 @@ public class Sprite
         this.bitmap = bitmap;
     }
 
+    /**
+     * update the sprite
+     * in this app the update is only on the y axis.
+     */
     public void update()
     {
         y += height;
@@ -34,6 +38,10 @@ public class Sprite
         }
     }
 
+    /**
+     * onDraw paint the Image on the canvas
+     * @param canvas
+     */
     public void onDraw(Canvas canvas)
     {
         if(MainActivity.running)
