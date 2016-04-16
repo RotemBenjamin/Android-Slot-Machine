@@ -28,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences sharedPref;
     private SharedPreferences.Editor sharedPrefEditor;
 
+    private WinningView firstWinView;
+    private WinningView secondWinView;
+    private WinningView thirdWinView;
+    private WinningView fourthWinView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
         settingsTextView = (TextView) findViewById(R.id.gameSettingsTextView);
         automaticButton = (TextView) findViewById(R.id.automaticGameTextView);
         collectButton = (TextView) findViewById(R.id.collectTextView);
+
+        firstWinView = (WinningView) findViewById(R.id.first_win_view);
+        secondWinView = (WinningView) findViewById(R.id.second_win_view);
+        thirdWinView = (WinningView) findViewById(R.id.third_win_view);
+        fourthWinView = (WinningView) findViewById(R.id.fourth_win_view);
     }
 
     /**
