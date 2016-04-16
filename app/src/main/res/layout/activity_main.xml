@@ -84,6 +84,79 @@
 
             </LinearLayout>
 
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="fill_parent"
+                android:weightSum="1"
+                android:layout_gravity="bottom"
+                >
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25">
+
+                    <com.example.rotem.flaminghotgame.WinningView
+                        android:id="@+id/first_win_view"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_color_canvas"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:padding="5dp">
+
+                    <com.example.rotem.flaminghotgame.WinningView
+                        android:id="@+id/second_win_view"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_color_canvas"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:padding="5dp">
+
+                    <com.example.rotem.flaminghotgame.WinningView
+                        android:id="@+id/third_win_view"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_color_canvas"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:padding="5dp">
+
+                    <com.example.rotem.flaminghotgame.WinningView
+                        android:id="@+id/fourth_win_view"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_color_canvas"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
